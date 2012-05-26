@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <title>東京農業大学　農友会村の会部　実習ページ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="東京農業大学 農友会村の会部 | 農業実習">
+    <link rel="canonical" href="http://murakai.sakura.ne.jp/fieldwork/index.html"/>
+    <meta name="author" content="東京農業大学　農友会村の会部　記録局"> 
+
+    <!-- googlemap API用 -->
+  <meta http-equiv="imagetoolbar" content="no" />
+
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.gmap3.js"></script>
+    <!-- /googlemap API用 -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="../assets/css/docs.css" rel="stylesheet">
+    <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/ico/cherry.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/cherry.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/cherry.png">
+    <style type="text/css">
+      div#gMap {
+          width:90%;
+          height: 600px;
+          margin-left: auto;
+          margin-right: auto;
+      }
+      img {
+          max-width: none;
+      }
+    </style>
+    <script type="text/javascript">
+      <!--
+      $(function() {
+          $("#gMap").gmap3({
+              latitude: 35.64156,
+              longitude: 139.631025,
+              zoom: 5,
+              navigationControl: true,
+              mapTypeControl: true,
+              scaleControl: true,
+              markers: [
+                  {
+                      latitude: 35.64156,
+                      longitude: 139.631025,
+                      title: '東京都世田谷区桜ヶ丘1-1-1',
+                      content: '<div><h4 class="selector01">農友会村の会部　部室</h4><p style="margin-left:25px;">部員が君を待っている！</p></div>',
+                      openInfo: true
+                  },
+                   {
+                      latitude: 42.900867,
+                      longitude: 140.758553,
+                      title: '北海道虻田郡倶知安町',
+                      content: '<div><h4 class="selector01">倶知安実習</h4><p style="margin-left:25px;">じゃがいも、山芋他</p></div>',
+                  },
+                  {
+                      latitude: 42.428525,
+                      longitude: 139.884109,
+                      title: '北海道久遠郡せたな町',
+                      content: '<div><h4 class="selector01">瀬棚実習</h4><p style="margin-left:25px;">酪農</p></div>',
+                  },
+                  {
+                      latitude: 38.386881,
+                      longitude: 140.275154,
+                      title: '山形県寒河江市',
+                      content: '<div><h4 class="selector01">さくらんぼ実習</h4><p style="margin-left:25px;">さくらんぼ</p></div>',
+                  },
+                  {
+                      latitude: 37.409983,
+                      longitude: 140.362587,
+                      title: '福島県郡山市',
+                      content: '<div><h4 class="selector01">郡山実習</h4><p style="margin-left:25px;">各種野菜</p></div>',
+                  },
+                  {
+                      latitude: 35.958556,
+                      longitude: 138.474398,
+                      title: '長野県南佐久郡南牧村',
+                      content: '<div><h4 class="selector01">野辺山実習</h4><p style="margin-left:25px;">高原野菜</p></div>',
+                  },
+                  {
+                      latitude: 36.746862,
+                      longitude: 138.368969,
+                      title: '長野県中野市',
+                      content: '<div><h4 class="selector01">桃実習</h4><p style="margin-left:25px;">桃</p></div>',
+                  },
+                  {
+                      latitude: 36.424882,
+                      longitude: 138.793094,
+                      title: '群馬県高崎市倉渕',
+                      content: '<div><h4 class="selector01">倉渕実習</h4><p style="margin-left:25px;">各種野菜</p></div>',
+                  },
+                  {
+                      latitude: 35.855805,
+                      longitude: 139.411497,
+                      title: '埼玉県狭山市',
+                      content: '<div><h4 class="selector01">狭山実習</h4><p style="margin-left:25px;">各種野菜</p></div>',
+                  },
+                  {
+                      latitude: 35.272251,
+                      longitude: 139.151058,
+                      title: '神奈川県小田原市',
+                      content: '<div><h4 class="selector01">みかん実習</h4><p style="margin-left:25px;">みかん</p></div>',
+                  },
+                  {
+                      latitude: 35.100459,
+                      longitude: 138.903394,
+                      title: '静岡県清水市',
+                      content: '<div><h4 class="selector01">お茶実習</h4><p style="margin-left:25px;">お茶</p></div>',
+                  },
+                  {
+                      latitude: 32.869784,
+                      longitude: 131.141426,
+                      title: '熊本県阿蘇郡',
+                      content: '<div><h4 class="selector01">トマト実習</h4><p style="margin-left:25px;">トマト、イチゴ</p></div>',
+                  },
+                  {
+                      latitude: 30.394199,
+                      longitude: 130.67276,
+                      title: '鹿児島県熊毛郡屋久島町',
+                      content: '<div><h4 class="selector01">たんかん実習</h4><p style="margin-left:25px;">たんかん</p></div>',
+                  },
+              ]
+          });
+      });
+      -->
+    </script>
+  </head>
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+
+  <!--  ナビゲーション ここから
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          </a>
+          <a class="brand" href="../index.html">東京農業大学　農友会　村の会部</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="../index.html">TOP</a>
+              </li>
+              <li class="">
+                <a href="../info/index.html">活動内容</a>
+              </li>
+              <li class="active">
+                <a href="index.html">実習地紹介</a>
+              </li>
+              <li class="">
+                <a href="../festival/index.html">収穫祭活動</a>
+              </li>
+              <li class="">
+                <a href="../otherworks/index.html">その他の活動</a>
+              </li>
+              <li class="">
+                <a href="http://ameblo.jp/muranokai/">ブログ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- ナビゲーション　ここまで
+    ================================================== -->
+
+   <!-- メインページ　ここから -->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <div align="center"><img src="../assets/img/4.png" width="32" height="50" class="pin"></div>
+            <h4 class="selector01">実習地一覧</h4>
+            <ul class="nav nav-list">
+              <li class="nav-header">北海道</li>
+              <li class=""><a href="./setana/index.html">久遠郡せたな町　(酪農)</a></li>
+              <li class=""><a href="./kucchan/index.html">虻田郡倶知安町　(ジャガイモ、山芋他)</a></li>
+              <li class="nav-header">山形県</li>
+              <li><a href="./sagae/index.html">寒河江市　(さくらんぼ)</a></li>
+              <li class="nav-header">福島県</li>
+              <li><a href="./koriyama/index.html">郡山市　(各種野菜)</a></li>
+              <li class="nav-header">長野県</li>
+              <li><a href="./nobeyama/index.html">野辺山　(高原野菜)</a></li>
+              <li><a href="./nakano/index.html">中野市　(桃)</a></li>
+              <li class="nav-header">群馬県</li>
+              <li><a href="./kurabuchi/index.html">高崎市倉渕村　(各種野菜)</a></li>
+              <li class="nav-header">埼玉県</li>
+              <li><a href="./sayama/index.html">狭山市　(各種野菜)</a></li>
+              <li class="nav-header">神奈川県</li>
+              <li><a href="./odawara/index.html">小田原市　(みかん)</a></li>
+              <li class="nav-header">静岡県</li>
+              <li><a href="./shimizu/index.html">清水市　(お茶)</a></li>
+              <li class="nav-header">熊本県</li>
+              <li><a href="./aso/index.html">阿蘇郡　(トマト、イチゴ他)</a></li>
+              <li class="nav-header">鹿児島県</li>
+              <li><a href="./yakushima/index.html">熊毛郡屋久島町　(たんかん)</a></li>
+              <p>　　　　　　　　　</p><!-- 調整 -->
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="row-fluid">
+            <div class="span12" class="hero-unit">
+              <div align="center"><img src="../assets/img/4.png" width="32" height="50" class="pin"></div>
+              <!-- 地図ページ　ここから -->
+              <div id="gMap"></div>
+              <p>　　　　　　　　　</p><!-- 調整 -->
+              <!-- 地図ページ　ここまで -->
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+    </div><!--/container-->
+    <!-- メインページ　ここまで -->
+    <hr>
+  </body>
+</html>

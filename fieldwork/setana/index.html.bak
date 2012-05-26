@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="utf-8">
+    <title>瀬棚実習</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="../../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+  <!--  ナビゲーション ここから
+    ================================================== -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          </a>
+          <a class="brand" href="../../index.html">東京農業大学　農友会　村の会部</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="../../index.html">TOP</a>
+              </li>
+              <li class="">
+                <a href="../../info/index.html">活動内容</a>
+              </li>
+              <li class="active">
+                <a href="../index.html">実習地紹介</a>
+              </li>
+              <li class="">
+                <a href="../../festival/index.html">収穫祭活動</a>
+              </li>
+              <li class="">
+                <a href="../../otherworks/index.html">その他の活動</a>
+              </li>
+              <li class="">
+                <a href="http://ameblo.jp/muranokai/">ブログ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- ナビゲーション　ここまで
+    ================================================== -->
+
+    <div class="container">
+      <!-- メインページ　ここから -->
+      <div class="hero-unit">
+        <div align="center"><img src="../../assets/img/4.png" width="20" height="20"></div>
+        <div class="selector03">
+          <h1>瀬棚実習</h1>
+          <h3>～牛に触れ合える唯一の実習～</h3>
+        </div>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span6" class="hero-unit">
+          <div align="center"><img src="../../assets/img/4.png" width="20" height="20"></div>
+          <h2 class="selector01">実習概要</h2>
+          <ul>
+            <li>実習地</li>
+            <p>北海道久遠郡</p>
+            <li>栽培品目</li>
+            <p>酪農</p>
+            <p class="text_jissyu">　　　</p> <!-- 調整 -->
+          </ul>
+        </div>
+        <div class="span6" class="hero-unit">
+        <div align="center"><img src="../../assets/img/4.png" width="20" height="20"></div>
+          <h2 class="selector01">実習地紹介</h2>
+            <p class="text_jissyu">乳牛と食肉用の黒毛牛をやっている農家さんのお家です。</p>
+            <p class="text_jissyu">毎日朝早くから夜遅くまで実習をし、酪農の大変さを身をもって学べます。</p>
+            <p class="text_jissyu">牛の出産に立ち会えたりと命の大切さにも気づかせてもらえる実習でもあります。</p>
+            <p class="text_jissyu">　　　</p> <!-- 調整 -->
+            <p class="text_jissyu">休憩時間にはみんなで遊んだり、農家さんが海や地域のお祭りや</p>
+            <p class="text_jissyu">集まりに連れて行ってくれたりと、実習以外にも楽しいことが盛りだくさんです。</p>
+            <p class="text_jissyu">いろんな人との交流ができるのも魅力です。</p>
+            <p class="text_jissyu">　　　</p> <!-- 調整 -->
+            <p class="text_jissyu">農家さんも心の優しい人達なので、アットホームな実習生活で、</p>
+            <p class="text_jissyu">毎年せたなリピーターがうまれています！</p>
+            <p class="text_jissyu">毎日牛に囲まれ、牧草地で癒され、みんなで楽しく協力して実習しています。</p>
+            <p class="text_jissyu">　　　</p> <!-- 調整 -->
+           
+        </div>
+      </div>
+      <hr><!-- 水平線を入れる -->
+      <!-- 画像　一列目 ここから -->
+      <ul class="thumbnails">
+        <li class="span4_thumb">
+        <div align="center"><img src="../../assets/img/4.png" width="20" height="20"></div>
+          <div class="thumbnail">
+            <img src="http://photozou.jp/p/img/124365460" alt="実習写真1枚目">
+             <p class="text_thumb">夏の牧草地、牛たちがのんびり草をはんでます。</p>
+             <p class="text_thumb">癒されます。</p>
+          </div>
+        </li>
+        <li class="span4_thumb">
+        <div align="center"><img src="../../assets/img/4.png" width="20" height="20"></div>
+          <div class="thumbnail">
+            <img src="http://photozou.jp/p/img/124365441" alt="実習写真2枚目">
+             <p class="text_thumb">双子の黒毛、いつもそばにいます（^^）</p>
+          </div>
+        </li>
+        <li class="span4_thumb">
+          <div align="center"><img src="../../assets/img/4.png" width="20" height="20"></div>
+          <div class="thumbnail">
+            <img src="http://photozou.jp/p/img/124365383" alt="実習写真3枚目">
+             <p class="text_thumb">お昼休憩にみんなで牧草地で遊びました！</p>
+             <p class="text_thumb">北海道の自然を堪能！</p>
+          </div>
+        </li>
+       </ul>
+      <!-- 画像　1列目 ここまで-->
+      <!-- 画像　2列目 ここから -->
+      <ul class="thumbnails">
+        <li class="span4_thumb">
+          <div align="center"><img src="../../assets/img/4.png" width="20" height="20"></div>
+          <div class="thumbnail">
+            <img src="http://photozou.jp/p/img/124365420" alt="実習写真4枚目">
+             <p class="text_thumb">北海道の海に連れていってもらえたりもします！
+             <p class="text_thumb">この日はみんなでカニ釣りをしました！</p>
+             <p class="text_thumb">みんなとの交流も多くて楽しいせたな(^^)</p>
+          </div>
+        </li>
+        <li class="span4_thumb">
+          <div align="center"><img src="../../assets/img/4.png" width="20" height="20"></div>
+          <div class="thumbnail">
+            <img src="http://photozou.jp/p/img/124365404" alt="実習写真5枚目">
+             <p class="text_thumb">こちらは冬のせたな。青と白の世界でした！</p>
+             <p class="text_thumb">だけど、冬は吹雪くとなまら寒い！ </p>
+          </div>
+        </li>
+       </ul>
+      <!-- 画像　2列目 ここまで-->
+      <hr><!-- 水平線を入れる -->
+    
+    </div> <!-- /container -->
+    <!-- メインページ　ここまで -->
+  </body>
+</html>
