@@ -175,6 +175,9 @@ a:hover {
 .span4 {
   width: 300px;
 }
+.span4_none {
+  width: 370px;
+}
  /* í«â¡ y.miyagawa */
 .span4_thumb {
   width: 300px;
@@ -203,6 +206,35 @@ a:hover {
     border-radius: 6px;
 
 }
+  .bg_set {
+   /* îwåiópÇ…í«â¡ y.miyagawa */
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 0px #000000;
+    -moz-box-shadow:  5px 5px 10px #000000;
+    box-shadow: 5px 5px 10px #000000;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+  }
+  .strong{
+    color: #ff0000;
+    border-bottom: solid 1px #ff0000;
+  }
+   /* é ê^ópÇ…í«â¡ y.miyagawa */
+.polaroid {
+  position: relative;
+}
+ 
+.polaroid img {
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+.span6_none {
+  width: 570px;
+}
+
 .span7 {
   width: 540px;
 }
